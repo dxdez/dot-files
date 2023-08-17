@@ -5,3 +5,10 @@ Welcome to my dotfiles repository! Dotfiles are configuration files and settings
 ### Disclaimer
 
 Use at your own risk. These dotfiles are tailored to my personal preferences and workflows. While you're welcome to use them as a starting point, I recommend reviewing and customizing them to align with your needs.
+
+### Additional Notes and Requirements
+
+The font used in most of these configurations is the Jet Brains Nerd Font which can be installed by running in the following command in the linux terminal:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+```
