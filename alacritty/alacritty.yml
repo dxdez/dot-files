@@ -39,9 +39,9 @@ colors:
     red: '0xAD6377'
     green: '0x678876'
     yellow: '0xC1906D'
-    blue: '0x647788'
+    blue: '0x7E839E'
     magenta: '0x817899'
-    cyan: '0x658282'
+    cyan: '0x6A818A'
     white: '0xACACAC'
 
 key_bindings:
