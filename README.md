@@ -12,3 +12,9 @@ The font used in most of these configurations is the Jet Brains Nerd Font which 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 ```
+
+The vim configuration makes use of vim-plug to manage various plugins. The script will not initiate properly unless vim-plug is installed. Note that once it is installed, you will also need to run `:PlugInstall` within vim to use plugins. To install vim-plug, run the following (note that this installation is for neovim):
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
