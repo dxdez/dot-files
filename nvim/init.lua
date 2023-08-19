@@ -1,4 +1,5 @@
 local set = vim.opt
+
 set.number = true
 set.relativenumber = true
 set.autoindent = true
@@ -7,8 +8,8 @@ set.shiftwidth = 4
 set.softtabstop = 4
 set.termguicolors = true
 
-vim.cmd("hi clear")
 vim.cmd [[
+	hi clear
 	hi Normal ctermbg=234 ctermfg=252 guibg=#000000 guifg=#ACACAC
 	hi ColorColumn cterm=NONE ctermbg=235 ctermfg=NONE guibg=#000000 guifg=NONE
 	hi CursorColumn cterm=NONE ctermbg=235 ctermfg=NONE guibg=#000000 guifg=NONE
@@ -77,7 +78,7 @@ vim.cmd [[
 	hi Visual ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
 	hi VisualNOS ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
 	hi WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
-	hi moddedNormalFg ctermfg=252 guifg=#ACACAC
+	hi customNormalFg ctermfg=252 guifg=#ACACAC
 	hi diffAdded ctermfg=150 guifg=#678876
 	hi diffRemoved ctermfg=203 guifg=#AD6377
 	hi ALEErrorSign ctermbg=235 ctermfg=203 guibg=#000000 guifg=#AD6377
@@ -120,7 +121,7 @@ vim.cmd [[
 	hi DiagnosticError ctermfg=203 guifg=#AD6377
 	hi DiagnosticSignError ctermbg=235 ctermfg=203 guibg=#000000 guifg=#AD6377
 	hi DiagnosticFloatingHint ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#ACACAC
-	hi moddedALAccentRed ctermfg=203 guifg=#AD6377
+	hi customALAccentRed ctermfg=203 guifg=#AD6377
 ]]
 
 if vim.fn.has('nvim') == 1 then
@@ -154,14 +155,14 @@ vim.cmd [[
 	hi! link ToolbarLine TabLineFill
 	hi! link cssBraces Delimiter
 	hi! link cssClassName Special
-	hi! link cssClassNameDot moddedNormalFg
+	hi! link cssClassNameDot customNormalFg
 	hi! link cssPseudoClassId Special
 	hi! link cssTagName Statement
 	hi! link helpHyperTextJump Constant
 	hi! link htmlArg Constant
 	hi! link htmlEndTag Statement
 	hi! link htmlTag Statement
-	hi! link jsonQuote moddedNormalFg
+	hi! link jsonQuote customNormalFg
 	hi! link phpVarSelector Identifier
 	hi! link pythonFunction Title
 	hi! link rubyDefine Statement
@@ -169,21 +170,21 @@ vim.cmd [[
 	hi! link rubyInterpolationDelimiter String
 	hi! link rubySharpBang Comment
 	hi! link rubyStringDelimiter String
-	hi! link rustFuncCall moddedNormalFg
+	hi! link rustFuncCall customNormalFg
 	hi! link rustFuncName Title
 	hi! link rustType Constant
 	hi! link sassClass Special
-	hi! link shFunction moddedNormalFg
+	hi! link shFunction customNormalFg
 	hi! link vimContinue Comment
 	hi! link vimFuncSID vimFunction
-	hi! link vimFuncVar moddedNormalFg
+	hi! link vimFuncVar customNormalFg
 	hi! link vimFunction Title
 	hi! link vimGroup Statement
 	hi! link vimHiGroup Statement
 	hi! link vimHiTerm Identifier
 	hi! link vimMapModKey Special
 	hi! link vimOption Identifier
-	hi! link vimVar moddedNormalFg
+	hi! link vimVar customNormalFg
 	hi! link xmlAttrib Constant
 	hi! link xmlAttribPunct Statement
 	hi! link xmlEndTag Statement
@@ -194,7 +195,7 @@ vim.cmd [[
 	hi! link CtrlPPrtCursor Cursor
 	hi! link CtrlPMatch Title
 	hi! link CtrlPMode2 StatusLine
-	hi! link deniteMatched moddedNormalFg
+	hi! link deniteMatched customNormalFg
 	hi! link deniteMatchedChar Title
 	hi! link elixirBlockDefinition Statement
 	hi! link elixirDefine Statement
@@ -204,25 +205,25 @@ vim.cmd [[
 	hi! link elixirExceptionDefine Statement
 	hi! link elixirFunctionDeclaration Title
 	hi! link elixirKeyword Statement
-	hi! link elixirModuleDeclaration moddedNormalFg
+	hi! link elixirModuleDeclaration customNormalFg
 	hi! link elixirModuleDefine Statement
 	hi! link elixirPrivateDefine Statement
 	hi! link elixirStringDelimiter String
-	hi! link jsFlowMaybe moddedNormalFg
-	hi! link jsFlowObject moddedNormalFg
+	hi! link jsFlowMaybe customNormalFg
+	hi! link jsFlowObject customNormalFg
 	hi! link jsFlowType PreProc
-	hi! link graphqlName moddedNormalFg
-	hi! link graphqlOperator moddedNormalFg
+	hi! link graphqlName customNormalFg
+	hi! link graphqlOperator customNormalFg
 	hi! link gitmessengerHash Comment
 	hi! link gitmessengerHeader Statement
 	hi! link gitmessengerHistory Constant
 	hi! link jsArrowFunction Operator
-	hi! link jsClassDefinition moddedNormalFg
+	hi! link jsClassDefinition customNormalFg
 	hi! link jsClassFuncName Title
 	hi! link jsExport Statement
 	hi! link jsFuncName Title
 	hi! link jsFutureKeys Statement
-	hi! link jsFuncCall moddedNormalFg
+	hi! link jsFuncCall customNormalFg
 	hi! link jsGlobalObjects Statement
 	hi! link jsModuleKeywords Statement
 	hi! link jsModuleOperators Statement
@@ -238,7 +239,7 @@ vim.cmd [[
 	hi! link markdownHeadingDelimiter Comment
 	hi! link markdownRule Comment
 	hi! link ngxDirective Statement
-	hi! link plug1 moddedNormalFg
+	hi! link plug1 customNormalFg
 	hi! link plug2 Identifier
 	hi! link plugDash Comment
 	hi! link plugMessage Special
@@ -255,21 +256,21 @@ vim.cmd [[
 	hi! link StartifyPath Comment
 	hi! link StartifySection Statement
 	hi! link StartifySlash Comment
-	hi! link StartifySpecial moddedNormalFg
+	hi! link StartifySpecial customNormalFg
 	hi! link svssBraces Delimiter
-	hi! link swiftIdentifier moddedNormalFg
+	hi! link swiftIdentifier customNormalFg
 	hi! link TSAttribute Special
 	hi! link TSBoolean Constant
 	hi! link TSCharacter Constant
 	hi! link TSComment Comment
-	hi! link TSConstructor moddedNormalFg
+	hi! link TSConstructor customNormalFg
 	hi! link TSConditional Statement
 	hi! link TSConstant Constant
 	hi! link TSConstBuiltin Constant
 	hi! link TSConstMacro Constant
 	hi! link TSError Error
 	hi! link TSException Statement
-	hi! link TSField moddedNormalFg
+	hi! link TSField customNormalFg
 	hi! link TSFloat Constant
 	hi! link TSInclude Statement
 	hi! link TSKeyword Statement
@@ -277,12 +278,12 @@ vim.cmd [[
 	hi! link TSLabel Special
 	hi! link TSNamespace Statement
 	hi! link TSNumber Constant
-	hi! link TSOperator moddedNormalFg
-	hi! link TSParameter moddedNormalFg
-	hi! link TSParameterReference moddedNormalFg
-	hi! link TSProperty moddedNormalFg
-	hi! link TSPunctDelimiter moddedNormalFg
-	hi! link TSPunctBracket moddedNormalFg
+	hi! link TSOperator customNormalFg
+	hi! link TSParameter customNormalFg
+	hi! link TSParameterReference customNormalFg
+	hi! link TSProperty customNormalFg
+	hi! link TSPunctDelimiter customNormalFg
+	hi! link TSPunctBracket customNormalFg
 	hi! link TSPunctSpecial Special
 	hi! link TSRepeat Statement
 	hi! link TSString String
@@ -291,71 +292,71 @@ vim.cmd [[
 	hi! link TSTag htmlTagName
 	hi! link TSTagAttribute htmlArg
 	hi! link TSTagDelimiter htmlTagName
-	hi! link TSText moddedNormalFg
+	hi! link TSText customNormalFg
 	hi! link TSTitle Title
 	hi! link TSType Type
 	hi! link TSTypeBuiltin Type
-	hi! link TSVariable moddedNormalFg
+	hi! link TSVariable customNormalFg
 	hi! link TSVariableBuiltin Statement
-	hi! link typescriptAjaxMethods moddedNormalFg
-	hi! link typescriptBraces moddedNormalFg
-	hi! link typescriptEndColons moddedNormalFg
+	hi! link typescriptAjaxMethods customNormalFg
+	hi! link typescriptBraces customNormalFg
+	hi! link typescriptEndColons customNormalFg
 	hi! link typescriptFuncKeyword Statement
 	hi! link typescriptGlobalObjects Statement
-	hi! link typescriptHtmlElemProperties moddedNormalFg
+	hi! link typescriptHtmlElemProperties customNormalFg
 	hi! link typescriptIdentifier Statement
-	hi! link typescriptMessage moddedNormalFg
+	hi! link typescriptMessage customNormalFg
 	hi! link typescriptNull Constant
-	hi! link typescriptParens moddedNormalFg
+	hi! link typescriptParens customNormalFg
 ]]
 
 if vim.fn.has('nvim-0.8') == 1 then
 	vim.cmd [[
-	  hi! link @attribute TSAttribute
-	  hi! link @boolean TSBoolean
-	  hi! link @character TSCharacter
-	  hi! link @comment TSComment
-	  hi! link @constructor TSConstructor
-	  hi! link @conditional TSConditional
-	  hi! link @constant TSConstant
-	  hi! link @constant.builtin TSConstBuiltin
-	  hi! link @constant.macro TSConstMacro
-	  hi! link @error TSError
-	  hi! link @exception TSException
-	  hi! link @field TSField
-	  hi! link @float TSFloat
-	  hi! link @function TSFunction
-	  hi! link @function.builtin TSFunctionBuiltin
-	  hi! link @function.macro TSFunctionMacro
-	  hi! link @include TSInclude
-	  hi! link @keyword TSKeyword
-	  hi! link @keyword.function TSKeywordFunction
-	  hi! link @label TSLabel
-	  hi! link @method TSMethod
-	  hi! link @namespace TSNamespace
-	  hi! link @number TSNumber
-	  hi! link @operator TSOperator
-	  hi! link @parameter TSParameter
-	  hi! link @parameter.reference TSParameterReference
-	  hi! link @property TSProperty
-	  hi! link @punctuation.delimiter TSPunctDelimiter
-	  hi! link @punctuation.bracket TSPunctBracket
-	  hi! link @punctuation.special TSPunctSpecial
-	  hi! link @repeat TSRepeat
-	  hi! link @string TSString
-	  hi! link @string.regex TSStringRegex
-	  hi! link @string.escape TSStringEscape
-	  hi! link @tag TSTag
-	  hi! link @tag.attribute TSTagAttribute
-	  hi! link @tag.delimiter TSTagDelimiter
-	  hi! link @text TSText
-	  hi! link @text.note Todo
-	  hi! link @text.title TSTitle
-	  hi! link @text.uri TSURI
-	  hi! link @type TSType
-	  hi! link @type.builtin TSTypeBuiltin
-	  hi! link @variable TSVariable
-	  hi! link @variable.builtin TSVariableBuiltin
+		hi! link @attribute TSAttribute
+		hi! link @boolean TSBoolean
+		hi! link @character TSCharacter
+		hi! link @comment TSComment
+		hi! link @constructor TSConstructor
+		hi! link @conditional TSConditional
+		hi! link @constant TSConstant
+		hi! link @constant.builtin TSConstBuiltin
+		hi! link @constant.macro TSConstMacro
+		hi! link @error TSError
+		hi! link @exception TSException
+		hi! link @field TSField
+		hi! link @float TSFloat
+		hi! link @function TSFunction
+		hi! link @function.builtin TSFunctionBuiltin
+		hi! link @function.macro TSFunctionMacro
+		hi! link @include TSInclude
+		hi! link @keyword TSKeyword
+		hi! link @keyword.function TSKeywordFunction
+		hi! link @label TSLabel
+		hi! link @method TSMethod
+		hi! link @namespace TSNamespace
+		hi! link @number TSNumber
+		hi! link @operator TSOperator
+		hi! link @parameter TSParameter
+		hi! link @parameter.reference TSParameterReference
+		hi! link @property TSProperty
+		hi! link @punctuation.delimiter TSPunctDelimiter
+		hi! link @punctuation.bracket TSPunctBracket
+		hi! link @punctuation.special TSPunctSpecial
+		hi! link @repeat TSRepeat
+		hi! link @string TSString
+		hi! link @string.regex TSStringRegex
+		hi! link @string.escape TSStringEscape
+		hi! link @tag TSTag
+		hi! link @tag.attribute TSTagAttribute
+		hi! link @tag.delimiter TSTagDelimiter
+		hi! link @text TSText
+		hi! link @text.note Todo
+		hi! link @text.title TSTitle
+		hi! link @text.uri TSURI
+		hi! link @type TSType
+		hi! link @type.builtin TSTypeBuiltin
+		hi! link @variable TSVariable
+		hi! link @variable.builtin TSVariableBuiltin
 	]]
 end
 
@@ -368,6 +369,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 
 vim.call('plug#end')
