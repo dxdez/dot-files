@@ -374,3 +374,11 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 vim.call('plug#end')
 
+vim.cmd [[
+	nnoremap <C-f> :NERDTreeFocus<CR>
+	nnoremap <C-n> :NERDTree<CR>
+	nnoremap <C-t> :NERDTreeToggle<CR>
+]]
+
+
+
