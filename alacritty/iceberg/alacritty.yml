@@ -33,7 +33,7 @@ colors:
     foreground: '0xC7C8D1'
   cursor:
     text: '0xC7C8D1'
-    cursor: '0x1E2031'
+    cursor: '0x555555'
   normal:
     black: '0x161820'
     red: '0xD47D7B'
