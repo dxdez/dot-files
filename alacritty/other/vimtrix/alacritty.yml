@@ -1,0 +1,63 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 12
+    y: 12
+  dynamic_padding: false
+  opacity: 1
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+  size: 9.0
+
+colors:
+  primary:
+    background: '0x002000'
+    foreground: '0x9CEACE'
+  cursor:
+    text: '0x9CEACE'
+    cursor: '0x4CC998'
+  normal:
+    black: '0x002000'
+    red: '0x43C293'
+    green: '0x3F896F'
+    yellow: '0x70D9B1'
+    blue: '0x4CC998'
+    magenta: '0x4CC998'
+    cyan: '0x68D5AC'
+    white: '0x9CEACE'
+
+key_bindings:
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: Paste,     mods: None,          action: Paste                       }
+  - { key: Copy,      mods: None,          action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
