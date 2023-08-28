@@ -11,7 +11,7 @@ set.termguicolors = true
 vim.cmd [[
 	hi clear
 	syntax reset
-	let g:colors_name = "vimtrix"
+	let g:colors_name = "vimtrix-2"
 	set background=dark
 	set t_Co=256
 	hi Normal guifg=#9ceace ctermbg=NONE guibg=#002000 gui=NONE
@@ -28,13 +28,13 @@ vim.cmd [[
 	hi cssImportant guifg=#43c293 guibg=NONE
 	hi Type guifg=#43c293 guibg=NONE
 	hi Identifier guifg=#43c293 guibg=NONE
-	hi PMenuSel guifg=#3F896F guibg=NONE
-	hi Constant guifg=#3F896F guibg=NONE
-	hi Repeat guifg=#3F896F guibg=NONE
-	hi DiffAdd guifg=#3F896F guibg=NONE
-	hi GitGutterAdd guifg=#3F896F guibg=NONE
-	hi cssIncludeKeyword guifg=#3F896F guibg=NONE
-	hi Keyword guifg=#3F896F guibg=NONE
+	hi PMenuSel guifg=#3f896f guibg=NONE
+	hi Constant guifg=#3f896f guibg=NONE
+	hi Repeat guifg=#3f896f guibg=NONE
+	hi DiffAdd guifg=#3f896f guibg=NONE
+	hi GitGutterAdd guifg=#3f896f guibg=NONE
+	hi cssIncludeKeyword guifg=#3f896f guibg=NONE
+	hi Keyword guifg=#3f896f guibg=NONE
 	hi IncSearch guifg=#70d9b1 guibg=NONE
 	hi Title guifg=#70d9b1 guibg=NONE
 	hi PreCondit guifg=#70d9b1 guibg=NONE
@@ -56,7 +56,7 @@ vim.cmd [[
 	hi DiffChange guifg=#70d9b1 guibg=NONE
 	hi GitGutterChange guifg=#70d9b1 guibg=NONE
 	hi cssColor guifg=#70d9b1 guibg=NONE
-	hi Function guifg=#4cc998 guibg=NONE
+	hi Function guifg=#71c599 guibg=NONE
 	hi Directory guifg=#4cc998 guibg=NONE
 	hi markdownLinkText guifg=#4cc998 guibg=NONE
 	hi javaScriptBoolean guifg=#4cc998 guibg=NONE
@@ -64,22 +64,22 @@ vim.cmd [[
 	hi Storage guifg=#4cc998 guibg=NONE
 	hi cssClassName guifg=#4cc998 guibg=NONE
 	hi cssClassNameDot guifg=#4cc998 guibg=NONE
-	hi Statement guifg=#68d5ac guibg=NONE
-	hi Operator guifg=#68d5ac guibg=NONE
-	hi cssAttr guifg=#68d5ac guibg=NONE
+	hi Statement guifg=#9ceace guibg=NONE
+	hi Operator guifg=#9ceace guibg=NONE
+	hi cssAttr guifg=#9ceace guibg=NONE
 	hi Pmenu guifg=#9ceace guibg=#013700
 	hi SignColumn guibg=#002000
 	hi Title guifg=#9ceace
 	hi LineNr guifg=#21996e guibg=#002000
-	hi NonText guifg=#4cc998 guibg=#002000
-	hi Comment guifg=#4cc998 gui=italic
-	hi SpecialComment guifg=#4cc998 gui=italic guibg=NONE
+	hi NonText guifg=#3f896f guibg=#002000
+	hi Comment guifg=#3f896f gui=italic
+	hi SpecialComment guifg=#3f896f gui=italic guibg=NONE
 	hi CursorLine guibg=#013700
 	hi TabLineFill gui=NONE guibg=#013700
 	hi TabLine guifg=#21996e guibg=#013700 gui=NONE
 	hi StatusLine gui=bold guibg=#013700 guifg=#9ceace
 	hi StatusLineNC gui=NONE guibg=#002000 guifg=#9ceace
-	hi Search guibg=#4cc998 guifg=#9ceace
+	hi Search guibg=#3f896f guifg=#9ceace
 	hi VertSplit gui=NONE guifg=#013700 guibg=NONE
 	hi Visual gui=NONE guibg=#013700
 ]]
