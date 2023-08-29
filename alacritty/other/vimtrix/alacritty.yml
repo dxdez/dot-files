@@ -43,6 +43,24 @@ colors:
     magenta: '0x4CC998'
     cyan: '0x68D5AC'
     white: '0x9CEACE'
+  bright:
+    black: '0x4e7567'
+    red: '0x7bd4b3'
+    green: '0x79ac9a'
+    yellow: '0x9be4a7'
+    blue: '0x9cd6b8'
+    magenta: '0x82d9b7'
+    cyan: '0x95e2c5'
+    white: '0xbaf0dd'
+  dim:
+    black: '0x013700'
+    red: '0x2f8867'
+    green: '0x2c604e'
+    yellow: '0x4e987c'
+    blue: '0x4f8a6b'
+    magenta: '0x358d6a'
+    cyan: '0x499578'
+    white: '0x6da490'
 
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }
