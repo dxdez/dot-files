@@ -5,6 +5,7 @@ font pango:JetBrainsMono 8
 exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
+exec --no-startup-id xrandr --output Virtual-1 --mode 1920x1080
 
 set $refresh_i3status killall -SIGUSR1 i3status
 
@@ -15,7 +16,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 floating_modifier $mod
 
-default_border none
+#default_border none
+default_border pixel 1
 
 # set default terminal
 bindsym $mod+Return exec --no-startup-id alacritty
@@ -25,6 +27,10 @@ bindsym $mod+Shift+q kill
 
 # demenu
 bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#4CC998' -nb '#002000' -sb '#013700' -sf '#9CEACE' -fn 'JetBrainsMono-9'"
+
+# background
+exec --no-startup-id xsetroot -solid "#002000"
+# exec --no-startup-id feh --bg-fill ~/Pictures/solid-color-image.png
 
 # window and layout bindings
 bindsym $mod+j focus left
@@ -91,6 +97,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# configure gaps
+gaps inner 6px
+gaps outer 4px
+
 # resize options
 mode "resize" {
         bindsym j resize shrink width 5 px or 5 ppt
@@ -111,11 +121,11 @@ bindsym $mod+r mode "resize"
 
 # class                 border  bground text    indicator child_border
 client.focused          #3F896F #013700 #9CEACE #68D5AC   #68D5AC
-client.focused_inactive #3F896F #3F896F #9CEACE #4CC998   #4CC998
-client.unfocused        #002000 #002000 #4CC998 #013700   #013700
-client.urgent           #43C293 #43C293 #013700 #43C293   #43C293
-client.placeholder      #002000 #002000 #9CEACE #002000   #002000
-client.background       #9CEACE
+client.focused_inactive #3F896F #013700 #9CEACE #68D5AC   #3F896F
+client.unfocused        #3F896F #013700 #9CEACE #68D5AC   #3F896F
+client.urgent           #3F896F #013700 #9CEACE #68D5AC   #3F896F
+client.placeholder      #3F896F #013700 #9CEACE #68D5AC   #3F896F
+client.background       #3F896F
 
 #Use this for workspace configuration
 #bar {

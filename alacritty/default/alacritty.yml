@@ -31,6 +31,10 @@ colors:
   primary:
     background: '0x002000'
     foreground: '0x9CEACE'
+    dim_background: '0x002000'
+    dim_foreground: '0x9CEACE'
+    bright_background: '0x002000'
+    bright_foreground: '0x9CEACE'
   cursor:
     text: '0x9CEACE'
     cursor: '0x4CC998'
