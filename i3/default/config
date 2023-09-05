@@ -30,7 +30,7 @@ bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#4CC998' -nb '#002000' -sb '
 
 # background
 exec --no-startup-id xsetroot -solid "#002000"
-# exec --no-startup-id feh --bg-fill ~/Pictures/solid-color-image.png
+exec --no-startup-id feh --bg-fill ~/Pictures/solid.png
 
 # window and layout bindings
 bindsym $mod+j focus left
