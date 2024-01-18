@@ -20,3 +20,19 @@ Note that once it is installed, you will also need to run `:PlugInstall` within 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
+In addition, depending on the setup of your desktop enviornment or distribution, you will also need to verify that the programs `feh` and `xrandr` are installed. Note, results may vary on these installations depending on package versions and package manager.
+
+Arch Linux
+```
+sudo pacman -S feh xorg-xrandr
+```
+Fedora (i3/xorg)
+```
+sudo dnf install feh xorg-xrandr
+```
+Debian/Ubuntu
+```
+sudo apt-get update
+sudo apt-get install feh xorg-xrandr
+```
+
