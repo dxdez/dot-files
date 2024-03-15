@@ -14,16 +14,16 @@ window:
 
 font:
   normal:
-    family: JetBrains Mono
+    family: monospace
     style: Regular
   bold:
-    family: JetBrains Mono
+    family: monospace
     style: Bold
   italic:
-    family: JetBrains Mono
+    family: monospace
     style: Italic
   bold_italic:
-    family: JetBrains Mono
+    family: monospace
     style: Bold Italic
   size: 9.0
 

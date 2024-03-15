@@ -10,10 +10,6 @@ The goal of this setup is to reduce the time configuring the dot files within a 
 Use at your own risk. These dotfiles are tailored to my personal preferences and workflows. While you're welcome to use them as a starting point, I recommend reviewing and customizing them to align with your needs.
 
 ## Additional Notes and Requirements
-The font used in most of these configurations is the Jet Brains Nerd Font which can be installed by running in the following command in the linux terminal:
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
-```
 Some of the vim configurations make use of vim-plug to manage various plugins. The script will not initiate properly unless vim-plug is installed, depending on the selected folder (default, other, etc).
 Note that once it is installed, you will also need to run `:PlugInstall` within vim to use plugins. To install vim-plug, run the following (note that this installation is for neovim):
 ```
