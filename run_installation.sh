@@ -15,7 +15,6 @@ source_dir="./"
 destination_base="$HOME/.config"
 
 declare -A config_folders=(
-    ["alacritty/$directory_name/"]="alacritty"
     ["nvim/$directory_name/"]="nvim"
     ["i3/$directory_name/"]="i3"
 )
