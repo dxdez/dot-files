@@ -45,5 +45,6 @@ for source_folder in "${!config_folders[@]}"; do
     fi
 done
 
-echo "Configuration files copied successfully."
+echo "Configuration files copied successfully!"
+echo ""
 
