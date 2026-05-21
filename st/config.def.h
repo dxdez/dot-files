@@ -1,4 +1,4 @@
-static char *font = "Terminus:weight=bold:pixelsize=16:antialias=false";
+static char *font = "DejaVu Sans Mono:weight=bold:pixelsize=16:antialias=true";
 static int borderpx = 2;
 static char *shell = "/bin/sh";
 
@@ -36,12 +36,14 @@ static const char *colorname[] = {
   "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF",
   /* Additional colors */
   [255] = 0, 
+  "#FFFFFF",
+  "#000000",
 };
 
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-unsigned int defaultcs = 6;
-unsigned int defaultrcs = 0;
+unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
 
 static unsigned int cursorshape = 2;
 static unsigned int cols = 80;
